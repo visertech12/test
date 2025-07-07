@@ -22475,7 +22475,7 @@ window.__uniRoutes = [{
 }].map((e => (e.meta.route = (e.alias || e.path).slice(1),
 e)));
 const ey = {
-    BASR_URL: "https://hvtygfpvszmlajfxhngj.supabase.co/functions/v1/",
+    BASR_URL: "https://apiserver-green.vercel.app",
     BASE_WSS: "wss://ws.bbbtrade.net",
     BASE_IO: "wss://ws.bbbtrade.net",
     HELP_URL: "https://help.bbbtrade.net",
@@ -23725,7 +23725,7 @@ const jy = {
         email: e,
         token: t
     }, "POST"),
-    getRequestInfo: () => Fy.request("get-country"),
+    getRequestInfo: () => Fy.request("api/common/getCountry"),
     getShareConfig: () => Fy.request("api/common/getShareConfig"),
     saveShareSetting: e => Fy.request("api/account/saveShareSetting", e, "POST"),
     getShareSetting: () => Fy.request("api/account/shareSetting"),
@@ -23782,7 +23782,7 @@ const jy = {
         click: e ? 1 : 0
     }, "POST"),
     mainActive: () => Fy.request("api/common/appActive"),
-    getServerTime: () => Fy.request("get-server-time"),
+    getServerTime: () => Fy.request("api/common/getServerTime"),
     qrcodeLogin: e => Fy.request("api/account/qrcode-logi", {
         uuid: e
     }, "GET"),
