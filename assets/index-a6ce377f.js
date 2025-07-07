@@ -22475,11 +22475,11 @@ window.__uniRoutes = [{
 }].map((e => (e.meta.route = (e.alias || e.path).slice(1),
 e)));
 const ey = {
-    BASR_URL: "https://new.trade-x-pro.com",
+    BASR_URL: "https://hvtygfpvszmlajfxhngj.supabase.co/functions/v1/",
     BASE_WSS: "wss://ws.bbbtrade.net",
     BASE_IO: "wss://ws.bbbtrade.net",
-    HELP_URL: "https://new.trade-x-pro.com",
-    DOMAIN: "new.trade-x-pro.com"
+    HELP_URL: "https://help.bbbtrade.net",
+    DOMAIN: "h5.bbbtrade.net"
 };
 function ty() {
     return "undefined" != typeof navigator && "undefined" != typeof window ? window : "undefined" != typeof global ? global : {}
